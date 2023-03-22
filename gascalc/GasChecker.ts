@@ -347,6 +347,7 @@ export class GasCheckCollector {
 
     const tableOutput = table(this.tabRows, this.tableConfig)
     write(tableOutput)
+    process.exit(0)
   }
 
   addRow (res: GasTestResult): void {
